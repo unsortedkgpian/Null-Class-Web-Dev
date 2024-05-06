@@ -1,0 +1,187 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+a {
+  /* background-color: blue;
+  color: aqua; */
+
+  color: white;
+  text-decoration: none;
+}
+
+article{
+    height: 500px;
+    width: 500px;
+}
+.buttons {
+  background-color: aqua;
+  color: green;
+  margin: 100px;
+  padding:20px;
+  /* padding-left: 10px;
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding: 10px 20px 30px 40px; */
+  padding: 20px 40px;
+  border: 1px solid red;
+  border-radius: 5%;
+  font-size: larger;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  transition: 2s;
+}
+
+button{
+  background-color: aqua;
+  color: green;
+  margin: 100px;
+  padding: 20px 40px;
+  border: 1px solid red;
+  border-radius: 5%;
+  font-size: larger;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+  cursor: pointer;
+}
+
+.buttons:hover{
+  background-color: beige;
+}
+
+section{
+  height: 400px;
+  background-color: azure;
+
+}
+
+/* li{
+  display: inline;
+
+} */
+
+.navbar{
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style:none;
+  height:50px ;
+  background-color: black;
+}
+
+.image{
+  width: 300px;
+  height: auto;
+  border-radius: 25px;
+  float: right;
+}
+
+
+.flex-container{
+  height: 200px;
+  width: 200px;
+  background-color: aquamarine;
+  border:3px solid black;
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-elements{
+  height: 50px;
+  background-color: blue;
+  color: white;
+  border:solid 2px white;
+
+}
+
+footer{
+  height: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  float: bottom;
+}
+
+aside{
+  float: left;
+  min-height: calc(100vh -100px);
+  background-color: palegoldenrod;
+}
+
+section p{
+  font-family: cursive;
+}
+
+.flex-container .flex-container:nth-child(4){
+  background-color: rgb(255, 216, 23);
+}
+.flex-container .flex-container:first-child{
+  background-color: red;
+}
+.flex-container .flex-container:last-child{
+  background-color: rgb(11, 205, 37);
+}
+
+section h1 ~ p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+
+.box{
+  height: 100px;
+  width: 100px;
+  background-color: greenyellow;
+  /* transform: translate(50%, 50%) rotate(0deg) skew(20deg, 10deg) scale(5); */
+  /* transform: translate(50% 50%); */
+  animation-name: changeLocation;
+  animation-duration: 4s;
+  animation: 4s;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-delay: 5x;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes changeLocation {
+  0%{
+    left: 0px;
+    top: 0%;
+  }
+
+  25%{
+    background-color: red;
+    left: 200px;
+    top: 0;
+
+  }
+
+
+  50%{
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75%{
+    background-color: pink;
+    left: 0;
+    top: 200px;
+  }
+  100%{
+    background-color: yellowgreen;
+    left: 0;
+    top: 0;
+  }
+}

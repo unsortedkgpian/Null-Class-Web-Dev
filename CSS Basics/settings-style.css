@@ -1,0 +1,51 @@
+.box-container{
+    height: 200px;
+    width: 300px;
+    background-color: yellow;
+    border: solid 2px black;
+    margin: 10px;
+
+}
+.box-container-1{
+    height: 400px;
+    width: 500px;
+    /* background-color: yellow; */
+    border: solid 2px black;
+    margin: 10px;
+
+}
+ 
+/* .box-container:first-child{
+    background-color: red;
+    /* position: static; */
+    /* position: relative; */
+    /* position: absolute; */
+    /* z-index: 3;
+    top:10%;
+    left: 30%; */
+/* } */
+
+.box-container:nth-child(4){
+    background-color: blue;
+    /* position: fixed; */
+    position: sticky;
+    top: 30%;
+    left: 70%;
+} 
+
+.a , .b{
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.a{
+    background-color: url('./imagescopy.jpeg');
+    /* background-size: 50px 70px; */
+    background-size: cover;
+    background-position: 30px 50px;
+    background-color: left bottom;
+    
+    background-repeat: no-repeat;
+}
